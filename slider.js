@@ -11,9 +11,6 @@ $(document).ready(function(){
             'width' : slideWidth
         });
     $('#slideInner').css('width', slideWidth * numberOfSlides);
-    $('#slideshow')
-        .prepend('<span class="control" id="leftControl">Clicking moves left</span>')
-        .append('<span class="control" id="rightControl">Clicking moves right</span>');
     $('.control')
         .bind('click', function(){
             if ($(this).attr('id')=='leftControl'){
